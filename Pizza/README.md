@@ -1,3 +1,3 @@
-#Using CSS3 to create Geometric Shapes to build a Pizza
+#Using CSS3 to create Shapes to build a Pizza
 
-##Pepperoni, Bacon and Mushroom. My favorite
+##Pepperoni, Bacon and Mushroom. My favourite
