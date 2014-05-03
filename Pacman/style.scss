@@ -1,0 +1,83 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border: 5px solid black;
+  background-image: url(http://fillmurray.com/500/500);
+  position: relative;
+  border-radius: 10px;
+}
+
+.pacman {
+    width: 90px;
+    height: 90px;
+    animation: move 10s linear infinite;
+}
+
+/*Each semi circle*/
+.half {
+  height: 45px;
+  width: 90px;
+  background-color: yellow;
+  animation: chewing 0.5s linear infinite alternate;
+}
+
+/*top semi circle*/
+.top {
+  transform: rotate(-25deg);
+  /*ensure rotation origins are at same point*/
+  transform-origin: 45px 45px;
+  border-radius: 90px 90px 0 0;  
+}
+
+.bottom {
+  transform: rotate(25deg);
+  transform-origin: 45px 0;
+  border-radius: 0 0 90px 90px;
+}
+
+@keyframes chewing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  
+  25% { 
+    transform: translateX(400px) rotate(0deg);
+  }
+  
+  26% {
+    transform: translateX(400px) rotate(90deg);
+  }
+  
+  50% { 
+    transform: translateX(400px) translateY(400px) rotate(90deg);
+  }
+  
+  51% {
+    transform: translateX(400px) translateY(400px) rotate(180deg);
+  }
+  
+  75% {
+    transform: translateX(0px) translateY(400px) rotate(180deg);
+  }
+  
+  76% {
+    transform: translateX(0px) translateY(400px) rotate(270deg);
+  }
+  
+  99% {
+    transform: translateX(0px) translateY(0px) rotate(270deg);
+  }
+  
+  100% {
+    transform:translateX(0) rotate(0deg);
+  }
+}
