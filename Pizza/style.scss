@@ -1,3 +1,34 @@
+
+$pep5:  1.1;
+$pep6:  1.5;
+$pep7:  1.5;
+$pep8:  1.3;
+$pep9:  1.3;
+$pep10: 1.4;
+$pep11: 1.6;
+
+$mush1: -20deg;
+$mush2: -115deg;
+$mush3: 90deg;
+$mush4: -30deg;
+
+$m1_top: -2%;
+$m1_left: 38%;
+$m2_top: 23%;
+$m2_left: -56%;
+$m3_top: 90%;
+$m3_left: 39%;
+$m4_top: 45%;
+$m4_left: 38%;
+
+
+$bacon2: -20deg;
+$bacon3: 110deg;
+
+$startX: 500px;
+
+
+
 .crust { 
 	margin: 50px auto;
 	width: 140px;
@@ -15,11 +46,15 @@
 	top:7%;
 	left:7%
 }
+
+/*****************
+ P E P P E R O N I
+ *****************/
+
 .pepperoni{
 	background-color: red;
 	border-radius: 50%;
 	position: absolute;
-	animation: dropthepep 1s, droptheshrooms 1s ;
 }
 .pepperoni{
 	width: 10px;
@@ -48,37 +83,42 @@
 .pepperoni.six{
 	top:65%;
 	left:25%;
-	transform: scale(1.1,1.1);
+	//transform: scale(1.1,1.1);
 }
 .pepperoni.seven{
 	top:19%;
 	left:35%;
-	transform: scale(1.5,1.5);
+	//transform: scale(1.5,1.5);
 }
 .pepperoni.eight{
 	top:27%;
 	left:15%;
-	transform: scale(1.3,1.3);
+	//transform: scale(1.3,1.3);
 }
 .pepperoni.nine{
 	top:75%;
 	left:40%;
-	transform: scale(1.3,1.3);
+	//transform: scale(1.3,1.3);
 }
 .pepperoni.ten{
 	top:35%;
 	left:70%;
-	transform: scale(1.4,1.4);
+	// transform: scale(1.4,1.4);
 }
 .pepperoni.eleven{
 	top:55%;
 	left:39%;
-	transform: scale(1.5,1.5);
+	// transform: scale(1.5,1.5);
 }
+
+/*****************
+ M U S H R O O M S
+ *****************/
+
 .mushroom{
 	position: relative;
 	z-index: 5;
-	animation: droptheshrooms 1s;
+	//animation: droptheshrooms 1s;
 }
 .cap, .stalk{
 	background-color: tan;
@@ -99,30 +139,45 @@
 
 /*bottom left*/
 .mushroom.one{
-	top: 70%;
-	left: 15%;
-	transform: rotate(20deg);
-
+	top: $m1_top;
+	left: $m1_left;
+	transform: rotate($mush1);
+	//animation: shroomone 0.5s 1s linear infinite;
+	animation: shroomone 0.5s linear;
 }
 
 /*bottom right*/
 .mushroom.two{
-	top: 29%;
-	left:70%;
-	transform: rotate(-20deg);
+	top: $m2_top;
+	left:$m2_left;
+	transform: rotate($mush2);
+	//animation: shroomtwo 0.5s 2s linear infinite;
+	animation: shroomtwo 0.5s linear;
 }
 /*top center*/
 .mushroom.three{
-	top: -15%;
-	left:-20%;
-	transform: rotate(-115deg);
+	top: $m3_top;
+	left: $m3_left;
+	transform: rotate($mush3);
+	// display: none;
+	animation: shroomthree 0.5s 1.0s linear ;
+	//animation: shroomthree 0.5s linear;
+	-webkit-transform:scale(0);
+	
 }
 /*bottom center*/
 .mushroom.four{
-	top: 45%;
-	left:38%;
-	transform: rotate(-30deg);
+	top: $m4_top;
+	left: $m4_left;
+	transform: rotate($mush4);
+	//animation: shroomfour 0.5s linear infinite ;
+	animation: shroomfour 0.5s linear;
 }
+
+/*****************
+	B A C O N  
+ *****************/
+
 .bacon, .crease{
 	transform:  skewY(15deg); 
 }
@@ -144,18 +199,19 @@
 .bacon.one{
 	top: 50%;
 	left:60%;
+	// animation: 
 }
 /*left center*/
 .bacon.two{
 	top: 20%;
 	left:30%;
-	transform: rotate(-20deg);
+	//transform: rotate(-20deg);
 }
 /*top right*/
 .bacon.three{
 	top: 5%;
 	left:55%;
-	transform: rotate(110deg);
+	//transform: rotate(110deg);
 }
 
 
@@ -166,61 +222,78 @@
 
 *************************************************/
 
+// pepperoni needs to be scaled
 
-
-
-@keyframes peptwo{
-	@include zero($translate-pep2);
-	@include hunnid($rotate-pep2);
-}
-
-@mixin zero($translate) {
+@mixin scale($scale,$translate) {
 	0% {
-		transform: translate($translate) rotate(0deg);
+		transform: translateX($translate) scale($scale);
 		opacity: 0;
 	}
-
-	50% {
+	5% {
 		opacity: 1;
 	}
+	100% {
+		transform: translateX(0) scale($scale);
+	}
 }
-@mixin hunnid($rotate) {
+
+@keyframes peponetofive {
+	@include scale(1,$startX);
+}
+@keyframes pepsix {
+	@include scale($pep6,$startX);
+}
+@keyframes pepseven {
+	@include scale($pep7,$startX);
+}
+@keyframes pepeight {
+	@include scale($pep8,$startX);
+}
+@keyframes pepnine {
+	@include scale($pep9,$startX);
+}
+@keyframes pepten {
+	@include scale($pep10,$startX);
+}
+@keyframes pepeleven {
+	@include scale($pep11,$startX);
+}
+
+
+// rotate and translate the mushrooms & bacon
+
+@mixin rotate($rotate, $translate, $top, $left) {
 	0% {
-		transform: translate(0) rotate($rotate);
-		opacity: 1;
+		transform: translateX($translate) rotate(0deg) scale(1);
+		// opacity: 0;
+		display: block;
+	}
+	50% {
+		// opacity: 1;
+		display: block;
+	}
+	100% {
+		transform: translateX(0) rotate($rotate) scale(1);
+		top: $top;
+		left: $left;
+		// opacity: 1;
+		display: block;
 	}
 }
 
-
-@keyframes dropthepep(x,y) {
-  0% {
-    transform: translateX(x) rotate(0deg); 
-  }
-  100% {
-    transform: translateX(0) rotate(y);
-  }
+@keyframes shroomone {
+	@include rotate($mush1,$startX,$m1_top,$m1_left);
 }
-		
-@keyframes droptheshrooms {
-  0% {
-    transform: translateY(500px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+@keyframes shroomtwo {
+	@include rotate($mush2,$startX,$m2_top,$m2_left);
+}
+@keyframes shroomthree {
+	@include rotate($mush3,$startX,$m3_top,$m3_left);
+}
+@keyframes shroomfour {
+	@include rotate($mush4,$startX,$m4_top,$m4_left);
 }
 
-@keyframes achinforbacon {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+
 
 
