@@ -178,8 +178,8 @@
   -webkit-transform: rotate(-20deg);
   -ms-transform: rotate(-20deg);
   transform: rotate(-20deg);
-  -webkit-animation: shroomone 0.5s 1.0s linear forwards;
-  animation: shroomone 0.5s 1.0s linear forwards;
+  -webkit-animation: shroomone 1.5s 1.0s linear forwards;
+  animation: shroomone 1.5s 1.0s linear forwards;
 }
 
 /*bottom right*/
@@ -190,8 +190,8 @@
   -webkit-transform: rotate(-115deg);
   -ms-transform: rotate(-115deg);
   transform: rotate(-115deg);
-  -webkit-animation: shroomtwo 0.5s 1.0s linear forwards;
-  animation: shroomtwo 0.5s 1.0s linear forwards;
+  -webkit-animation: shroomtwo 1.5s 1.0s linear forwards;
+  animation: shroomtwo 1.5s 1.0s linear forwards;
 }
 
 /*top center*/
@@ -202,8 +202,8 @@
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  -webkit-animation: shroomthree 0.5s 1.0s linear forwards;
-  animation: shroomthree 0.5s 1.0s linear forwards;
+  -webkit-animation: shroomthree 1.5s 1.0s linear forwards;
+  animation: shroomthree 1.5s 1.0s linear forwards;
 }
 
 /*bottom center*/
@@ -214,8 +214,8 @@
   -webkit-transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
   transform: rotate(-30deg);
-  -webkit-animation: shroomfour 0.5s 1.0s linear forwards;
-  animation: shroomfour 0.5s 1.0s linear forwards;
+  -webkit-animation: shroomfour 1.5s 1.0s linear forwards;
+  animation: shroomfour 1.5s 1.0s linear forwards;
 }
 
 /*****************
@@ -249,9 +249,9 @@
 .bacon.one {
   top: 50%;
   left: 60%;
-  -webkit-transform: rotate(-67deg);
-  -ms-transform: rotate(-67deg);
-  transform: rotate(-67deg);
+  -webkit-transform: rotate(-670deg);
+  -ms-transform: rotate(-670deg);
+  transform: rotate(-670deg);
 }
 
 /*left center*/
@@ -259,9 +259,9 @@
 .bacon.two {
   top: 20%;
   left: 30%;
-  -webkit-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  transform: rotate(-20deg);
+  -webkit-transform: rotate(-800deg);
+  -ms-transform: rotate(-800deg);
+  transform: rotate(-800deg);
 }
 
 /*top right*/
@@ -269,9 +269,11 @@
 .bacon.three {
   top: 5%;
   left: 55%;
-  -webkit-transform: rotate(110deg);
-  -ms-transform: rotate(110deg);
-  transform: rotate(110deg);
+  -webkit-transform: rotate(1100deg);
+  -ms-transform: rotate(1100deg);
+  transform: rotate(1100deg);
+  -webkit-animation: baconone 1.5s 3.0s linear forwards;
+  animation: baconone 1.5s 3.0s linear forwards;
 }
 
 /***********************************************
@@ -492,14 +494,14 @@
 
 @-webkit-keyframes shroomone {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(-20deg) scale(1);
-    transform: translateX(0) rotate(-20deg) scale(1);
+    -webkit-transform: translateX(0) rotate(-20deg);
+    transform: translateX(0) rotate(-20deg);
     top: -2%;
     left: 38%;
     background-color: tan;
@@ -509,16 +511,16 @@
 
 @keyframes shroomone {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    -ms-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    -ms-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(-20deg) scale(1);
-    -ms-transform: translateX(0) rotate(-20deg) scale(1);
-    transform: translateX(0) rotate(-20deg) scale(1);
+    -webkit-transform: translateX(0) rotate(-20deg);
+    -ms-transform: translateX(0) rotate(-20deg);
+    transform: translateX(0) rotate(-20deg);
     top: -2%;
     left: 38%;
     background-color: tan;
@@ -528,14 +530,14 @@
 
 @-webkit-keyframes shroomtwo {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(-115deg) scale(1);
-    transform: translateX(0) rotate(-115deg) scale(1);
+    -webkit-transform: translateX(0) rotate(-115deg);
+    transform: translateX(0) rotate(-115deg);
     top: 23%;
     left: -56%;
     background-color: tan;
@@ -545,16 +547,16 @@
 
 @keyframes shroomtwo {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    -ms-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    -ms-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(-115deg) scale(1);
-    -ms-transform: translateX(0) rotate(-115deg) scale(1);
-    transform: translateX(0) rotate(-115deg) scale(1);
+    -webkit-transform: translateX(0) rotate(-115deg);
+    -ms-transform: translateX(0) rotate(-115deg);
+    transform: translateX(0) rotate(-115deg);
     top: 23%;
     left: -56%;
     background-color: tan;
@@ -564,14 +566,14 @@
 
 @-webkit-keyframes shroomthree {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(90deg) scale(1);
-    transform: translateX(0) rotate(90deg) scale(1);
+    -webkit-transform: translateX(0) rotate(90deg);
+    transform: translateX(0) rotate(90deg);
     top: 90%;
     left: 39%;
     background-color: tan;
@@ -581,16 +583,16 @@
 
 @keyframes shroomthree {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    -ms-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    -ms-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(90deg) scale(1);
-    -ms-transform: translateX(0) rotate(90deg) scale(1);
-    transform: translateX(0) rotate(90deg) scale(1);
+    -webkit-transform: translateX(0) rotate(90deg);
+    -ms-transform: translateX(0) rotate(90deg);
+    transform: translateX(0) rotate(90deg);
     top: 90%;
     left: 39%;
     background-color: tan;
@@ -600,14 +602,14 @@
 
 @-webkit-keyframes shroomfour {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(-30deg) scale(1);
-    transform: translateX(0) rotate(-30deg) scale(1);
+    -webkit-transform: translateX(0) rotate(-30deg);
+    transform: translateX(0) rotate(-30deg);
     top: 45%;
     left: 38%;
     background-color: tan;
@@ -617,19 +619,49 @@
 
 @keyframes shroomfour {
   0% {
-    -webkit-transform: translateX(500px) rotate(0deg) scale(1);
-    -ms-transform: translateX(500px) rotate(0deg) scale(1);
-    transform: translateX(500px) rotate(0deg) scale(1);
+    -webkit-transform: translateX(500px) rotate(0deg);
+    -ms-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
     background-color: transparent;
   }
 
   100% {
-    -webkit-transform: translateX(0) rotate(-30deg) scale(1);
-    -ms-transform: translateX(0) rotate(-30deg) scale(1);
-    transform: translateX(0) rotate(-30deg) scale(1);
+    -webkit-transform: translateX(0) rotate(-30deg);
+    -ms-transform: translateX(0) rotate(-30deg);
+    transform: translateX(0) rotate(-30deg);
     top: 45%;
     left: 38%;
     background-color: tan;
     display: block;
+  }
+}
+
+@-webkit-keyframes baconone {
+  0% {
+    -webkit-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(-670deg);
+    transform: translateX(0) rotate(-670deg);
+    top: 50%;
+    left: 60%;
+  }
+}
+
+@keyframes baconone {
+  0% {
+    -webkit-transform: translateX(500px) rotate(0deg);
+    -ms-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(-670deg);
+    -ms-transform: translateX(0) rotate(-670deg);
+    transform: translateX(0) rotate(-670deg);
+    top: 50%;
+    left: 60%;
   }
 }

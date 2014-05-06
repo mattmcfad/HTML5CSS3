@@ -30,6 +30,10 @@ $p10-left: 31%;
 $p11-top: -17%;
 $p11-left: 39%;
 
+$origin1: 25px 25px;
+$origin2: -25px 45px;
+$origin3: 30px -35px;
+
 
 $mush1: -20deg;
 $mush2: -115deg;
@@ -46,15 +50,18 @@ $m4-top: 45%;
 $m4-left: 38%;
 
 
-$bacon1: -67deg;
-$bacon2: -20deg;
-$bacon3: 110deg;
+$bacon1: -670deg;
+$bacon2: -800deg;
+$bacon3: 1100deg;
+
+$b1-top: 50%;
+$b1-left: 60%;
+$b2-top: 20%;
+$b2-left: 30%;
+$b3-top: 5%;
+$b3-left: 55%;
 
 
-
-$origin1: 25px 25px;
-$origin2: -25px 45px;
-$origin3: 30px -35px;
 $startX: 500px;
 
 
@@ -188,7 +195,7 @@ $startX: 500px;
 	top: $m1-top;
 	left: $m1-left;
 	transform: rotate($mush1);
-	animation: shroomone 0.5s 1.0s linear forwards;
+	animation: shroomone 1.5s 1.0s linear forwards;
 }
 
 /*bottom right*/
@@ -196,21 +203,21 @@ $startX: 500px;
 	top: $m2-top;
 	left:$m2-left;
 	transform: rotate($mush2);
-	animation: shroomtwo 0.5s 1.0s linear forwards;
+	animation: shroomtwo 1.5s 1.0s linear forwards;
 }
 /*top center*/
 .mushroom.three{
 	top: $m3-top;
 	left: $m3-left;
 	transform: rotate($mush3);
-	animation: shroomthree 0.5s 1.0s linear forwards;
+	animation: shroomthree 1.5s 1.0s linear forwards;
 }
 /*bottom center*/
 .mushroom.four{
 	top: $m4-top;
 	left: $m4-left;
 	transform: rotate($mush4);
-	animation: shroomfour 0.5s 1.0s linear forwards;
+	animation: shroomfour 1.5s 1.0s linear forwards;
 }
 
 /*****************
@@ -235,21 +242,22 @@ $startX: 500px;
 }
 /*bottom right*/
 .bacon.one{
-	top: 50%;
-	left:60%;
+	top: $b1-top;
+	left:$b1-left;
 	transform: rotate($bacon1);
 }
 /*left center*/
 .bacon.two{
-	top: 20%;
-	left:30%;
+	top: $b2-top;
+	left:$b2-left;
 	transform: rotate($bacon2);
 }
 /*top right*/
 .bacon.three{
-	top: 5%;
-	left:55%;
+	top: $b3-top;
+	left:$b3-left;
 	transform: rotate($bacon3);
+	animation: baconone 1.5s 3.0s linear forwards;
 }
 
 
@@ -300,17 +308,13 @@ $startX: 500px;
 
 @mixin rotate($rotate, $translate, $top, $left) {
 	0% {
-		transform: translateX($translate) rotate(0deg) scale(1);
+		transform: translateX($translate) rotate(0deg);
 		// opacity: 0;
 		// display: none;
 		background-color: transparent;
 	}
-	50% {
-		// opacity: 1;
-		// display: block;
-	}
 	100% {
-		transform: translateX(0) rotate($rotate) scale(1);
+		transform: translateX(0) rotate($rotate);
 		top: $top;
 		left: $left;
 		// opacity: 1;
@@ -335,25 +339,24 @@ $startX: 500px;
 // Rotate The Bacon
 
 
-@mixin rotate($rotate, $translate, $top, $left) {
+@mixin rotateBacon($rotate, $translate, $top, $left) {
 	0% {
-		transform: translateX($translate) rotate(0deg) scale(1);
-		// opacity: 0;
-		// display: none;
-		background-color: transparent;
-	}
-	50% {
-		// opacity: 1;
-		// display: block;
+		transform: translateX($translate) rotate(0deg);
+		//opacity: 0;
+		//background-color: transparent;
 	}
 	100% {
-		transform: translateX(0) rotate($rotate) scale(1);
+		transform: translateX(0) rotate($rotate);
 		top: $top;
 		left: $left;
 		// opacity: 1;
-		background-color: tan;
-		display: block;
+		
+		
 	}
+}
+
+@keyframes baconone {
+	@include rotateBacon($bacon1, $startX,$b1-top,$b1-left)
 }
 
 
