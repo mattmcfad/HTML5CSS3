@@ -37,8 +37,8 @@
   -webkit-transform-origin: 25px 25px;
   -ms-transform-origin: 25px 25px;
   transform-origin: 25px 25px;
-  -webkit-animation: peponetofive 1.5s 2.0s linear forwards;
-  animation: peponetofive 1.5s 2.0s linear forwards;
+  -webkit-animation: peponetofive 1.5s 0.5s linear forwards;
+  animation: peponetofive 1.5s 0.5s linear forwards;
 }
 
 .pepperoni.two {
@@ -47,8 +47,8 @@
   -webkit-transform-origin: -25px 45px;
   -ms-transform-origin: -25px 45px;
   transform-origin: -25px 45px;
-  -webkit-animation: peponetofive 1.5s 2.0s linear forwards;
-  animation: peponetofive 1.5s 2.0s linear forwards;
+  -webkit-animation: peponetofive 1.5s 0.6s linear forwards;
+  animation: peponetofive 1.5s 0.6s linear forwards;
 }
 
 .pepperoni.three {
@@ -57,8 +57,8 @@
   -webkit-transform-origin: 30px -35px;
   -ms-transform-origin: 30px -35px;
   transform-origin: 30px -35px;
-  -webkit-animation: peponetofive 1.5s 2.0s linear forwards;
-  animation: peponetofive 1.5s 2.0s linear forwards;
+  -webkit-animation: peponetofive 1.5s 0.7s linear forwards;
+  animation: peponetofive 1.5s 0.7s linear forwards;
 }
 
 .pepperoni.four {
@@ -67,8 +67,8 @@
   -webkit-transform-origin: 25px 25px;
   -ms-transform-origin: 25px 25px;
   transform-origin: 25px 25px;
-  -webkit-animation: peponetofive 1.5s 2.0s linear forwards;
-  animation: peponetofive 1.5s 2.0s linear forwards;
+  -webkit-animation: peponetofive 1.5s 1.5s linear forwards;
+  animation: peponetofive 1.5s 1.5s linear forwards;
 }
 
 .pepperoni.five {
@@ -77,8 +77,8 @@
   -webkit-transform-origin: -25px 45px;
   -ms-transform-origin: -25px 45px;
   transform-origin: -25px 45px;
-  -webkit-animation: peponetofive 1.5s 2.0s linear forwards;
-  animation: peponetofive 1.5s 2.0s linear forwards;
+  -webkit-animation: peponetofive 1.5s 1.6s linear forwards;
+  animation: peponetofive 1.5s 1.6s linear forwards;
 }
 
 .pepperoni.six {
@@ -87,8 +87,8 @@
   -webkit-transform-origin: 30px -35px;
   -ms-transform-origin: 30px -35px;
   transform-origin: 30px -35px;
-  -webkit-animation: pepsix 1.5s 2.0s linear forwards;
-  animation: pepsix 1.5s 2.0s linear forwards;
+  -webkit-animation: pepsix 1.5s 1.8s linear forwards;
+  animation: pepsix 1.5s 1.8s linear forwards;
 }
 
 .pepperoni.seven {
@@ -107,8 +107,8 @@
   -webkit-transform-origin: -25px 45px;
   -ms-transform-origin: -25px 45px;
   transform-origin: -25px 45px;
-  -webkit-animation: pepeight 1.5s 2.0s linear forwards;
-  animation: pepeight 1.5s 2.0s linear forwards;
+  -webkit-animation: pepeight 1.2s 2.0s linear forwards;
+  animation: pepeight 1.2s 2.0s linear forwards;
 }
 
 .pepperoni.nine {
@@ -117,8 +117,8 @@
   -webkit-transform-origin: 30px -35px;
   -ms-transform-origin: 30px -35px;
   transform-origin: 30px -35px;
-  -webkit-animation: pepnine 1.5s 2.0s linear forwards;
-  animation: pepnine 1.5s 2.0s linear forwards;
+  -webkit-animation: pepnine 1.3s 2.0s linear forwards;
+  animation: pepnine 1.3s 2.0s linear forwards;
 }
 
 .pepperoni.ten {
@@ -127,8 +127,8 @@
   -webkit-transform-origin: 25px 25px;
   -ms-transform-origin: 25px 25px;
   transform-origin: 25px 25px;
-  -webkit-animation: pepten 1.5s 2.0s linear forwards;
-  animation: pepten 1.5s 2.0s linear forwards;
+  -webkit-animation: pepten 1.4s 2.0s linear forwards;
+  animation: pepten 1.4s 2.0s linear forwards;
 }
 
 .pepperoni.eleven {
@@ -178,8 +178,8 @@
   -webkit-transform: rotate(-20deg);
   -ms-transform: rotate(-20deg);
   transform: rotate(-20deg);
-  -webkit-animation: shroomone 1.5s 1.0s linear forwards;
-  animation: shroomone 1.5s 1.0s linear forwards;
+  -webkit-animation: shroomone 1.2s 1.0s linear forwards;
+  animation: shroomone 1.2s 1.0s linear forwards;
 }
 
 /*bottom right*/
@@ -190,8 +190,8 @@
   -webkit-transform: rotate(-115deg);
   -ms-transform: rotate(-115deg);
   transform: rotate(-115deg);
-  -webkit-animation: shroomtwo 1.5s 1.0s linear forwards;
-  animation: shroomtwo 1.5s 1.0s linear forwards;
+  -webkit-animation: shroomtwo 1.4s 1.3s linear forwards;
+  animation: shroomtwo 1.4s 1.3s linear forwards;
 }
 
 /*top center*/
@@ -202,8 +202,8 @@
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  -webkit-animation: shroomthree 1.5s 1.0s linear forwards;
-  animation: shroomthree 1.5s 1.0s linear forwards;
+  -webkit-animation: shroomthree 0.9s 2.0s linear forwards;
+  animation: shroomthree 0.9s 2.0s linear forwards;
 }
 
 /*bottom center*/
@@ -214,8 +214,8 @@
   -webkit-transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
   transform: rotate(-30deg);
-  -webkit-animation: shroomfour 1.5s 1.0s linear forwards;
-  animation: shroomfour 1.5s 1.0s linear forwards;
+  -webkit-animation: shroomfour 1.5s 1.5s linear forwards;
+  animation: shroomfour 1.5s 1.5s linear forwards;
 }
 
 /*****************
@@ -249,9 +249,12 @@
 .bacon.one {
   top: 50%;
   left: 60%;
+  opacity: 0;
   -webkit-transform: rotate(-670deg);
   -ms-transform: rotate(-670deg);
   transform: rotate(-670deg);
+  -webkit-animation: baconone 1.5s 3.0s linear forwards;
+  animation: baconone 1.5s 3.0s linear forwards;
 }
 
 /*left center*/
@@ -259,9 +262,12 @@
 .bacon.two {
   top: 20%;
   left: 30%;
+  opacity: 0;
   -webkit-transform: rotate(-800deg);
   -ms-transform: rotate(-800deg);
   transform: rotate(-800deg);
+  -webkit-animation: bacontwo 1.5s 3.0s linear forwards;
+  animation: bacontwo 1.5s 3.0s linear forwards;
 }
 
 /*top right*/
@@ -272,8 +278,9 @@
   -webkit-transform: rotate(1100deg);
   -ms-transform: rotate(1100deg);
   transform: rotate(1100deg);
-  -webkit-animation: baconone 1.5s 3.0s linear forwards;
-  animation: baconone 1.5s 3.0s linear forwards;
+  opacity: 0;
+  -webkit-animation: baconthree 1.5s 3.0s linear forwards;
+  animation: baconthree 1.5s 3.0s linear forwards;
 }
 
 /***********************************************
@@ -505,7 +512,6 @@
     top: -2%;
     left: 38%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -524,7 +530,6 @@
     top: -2%;
     left: 38%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -541,7 +546,6 @@
     top: 23%;
     left: -56%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -560,7 +564,6 @@
     top: 23%;
     left: -56%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -577,7 +580,6 @@
     top: 90%;
     left: 39%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -596,7 +598,6 @@
     top: 90%;
     left: 39%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -613,7 +614,6 @@
     top: 45%;
     left: 38%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -632,7 +632,6 @@
     top: 45%;
     left: 38%;
     background-color: tan;
-    display: block;
   }
 }
 
@@ -640,6 +639,7 @@
   0% {
     -webkit-transform: translateX(500px) rotate(0deg);
     transform: translateX(500px) rotate(0deg);
+    opacity: 0;
   }
 
   100% {
@@ -647,6 +647,7 @@
     transform: translateX(0) rotate(-670deg);
     top: 50%;
     left: 60%;
+    opacity: 1;
   }
 }
 
@@ -655,6 +656,7 @@
     -webkit-transform: translateX(500px) rotate(0deg);
     -ms-transform: translateX(500px) rotate(0deg);
     transform: translateX(500px) rotate(0deg);
+    opacity: 0;
   }
 
   100% {
@@ -663,5 +665,74 @@
     transform: translateX(0) rotate(-670deg);
     top: 50%;
     left: 60%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bacontwo {
+  0% {
+    -webkit-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(-800deg);
+    transform: translateX(0) rotate(-800deg);
+    top: 20%;
+    left: 30%;
+    opacity: 1;
+  }
+}
+
+@keyframes bacontwo {
+  0% {
+    -webkit-transform: translateX(500px) rotate(0deg);
+    -ms-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(-800deg);
+    -ms-transform: translateX(0) rotate(-800deg);
+    transform: translateX(0) rotate(-800deg);
+    top: 20%;
+    left: 30%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes baconthree {
+  0% {
+    -webkit-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(1100deg);
+    transform: translateX(0) rotate(1100deg);
+    top: 5%;
+    left: 55%;
+    opacity: 1;
+  }
+}
+
+@keyframes baconthree {
+  0% {
+    -webkit-transform: translateX(500px) rotate(0deg);
+    -ms-transform: translateX(500px) rotate(0deg);
+    transform: translateX(500px) rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(1100deg);
+    -ms-transform: translateX(0) rotate(1100deg);
+    transform: translateX(0) rotate(1100deg);
+    top: 5%;
+    left: 55%;
+    opacity: 1;
   }
 }
