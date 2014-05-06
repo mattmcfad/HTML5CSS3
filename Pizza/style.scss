@@ -118,10 +118,9 @@ $startX: 500px;
 .mushroom{
 	position: relative;
 	z-index: 5;
-	//animation: droptheshrooms 1s;
 }
 .cap, .stalk{
-	background-color: tan;
+	background-color: inherit;
 }
 .cap{
 	position: absolute;
@@ -143,7 +142,7 @@ $startX: 500px;
 	left: $m1_left;
 	transform: rotate($mush1);
 	//animation: shroomone 0.5s 1s linear infinite;
-	animation: shroomone 0.5s linear;
+	animation: shroomone 0.5s linear forwards;
 }
 
 /*bottom right*/
@@ -152,7 +151,7 @@ $startX: 500px;
 	left:$m2_left;
 	transform: rotate($mush2);
 	//animation: shroomtwo 0.5s 2s linear infinite;
-	animation: shroomtwo 0.5s linear;
+	animation: shroomtwo 0.5s linear forwards;
 }
 /*top center*/
 .mushroom.three{
@@ -160,10 +159,10 @@ $startX: 500px;
 	left: $m3_left;
 	transform: rotate($mush3);
 	// display: none;
-	animation: shroomthree 0.5s 1.0s linear ;
+
+	animation: shroomthree 0.5s 1.0s linear forwards;
 	//animation: shroomthree 0.5s linear;
-	-webkit-transform:scale(0);
-	
+	//-webkit-transform:scale(0);	
 }
 /*bottom center*/
 .mushroom.four{
@@ -171,7 +170,7 @@ $startX: 500px;
 	left: $m4_left;
 	transform: rotate($mush4);
 	//animation: shroomfour 0.5s linear infinite ;
-	animation: shroomfour 0.5s linear;
+	animation: shroomfour 0.5s linear forwards;
 }
 
 /*****************
@@ -266,17 +265,19 @@ $startX: 500px;
 	0% {
 		transform: translateX($translate) rotate(0deg) scale(1);
 		// opacity: 0;
-		display: block;
+		// display: none;
+		background-color: transparent;
 	}
 	50% {
 		// opacity: 1;
-		display: block;
+		// display: block;
 	}
 	100% {
 		transform: translateX(0) rotate($rotate) scale(1);
 		top: $top;
 		left: $left;
 		// opacity: 1;
+		background-color: tan;
 		display: block;
 	}
 }

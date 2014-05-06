@@ -98,7 +98,7 @@
 
 .cap,
 .stalk {
-  background-color: tan;
+  background-color: inherit;
 }
 
 .cap {
@@ -124,8 +124,8 @@
   -webkit-transform: rotate(-20deg);
   -ms-transform: rotate(-20deg);
   transform: rotate(-20deg);
-  -webkit-animation: shroomone 0.5s linear;
-  animation: shroomone 0.5s linear;
+  -webkit-animation: shroomone 0.5s linear forwards;
+  animation: shroomone 0.5s linear forwards;
 }
 
 /*bottom right*/
@@ -136,8 +136,8 @@
   -webkit-transform: rotate(-115deg);
   -ms-transform: rotate(-115deg);
   transform: rotate(-115deg);
-  -webkit-animation: shroomtwo 0.5s linear;
-  animation: shroomtwo 0.5s linear;
+  -webkit-animation: shroomtwo 0.5s linear forwards;
+  animation: shroomtwo 0.5s linear forwards;
 }
 
 /*top center*/
@@ -145,11 +145,11 @@
 .mushroom.three {
   top: 90%;
   left: 39%;
+  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  -webkit-animation: shroomthree 0.5s 1s linear;
-  animation: shroomthree 0.5s 1s linear;
-  -webkit-transform: scale(0);
+  -webkit-animation: shroomthree 0.5s 1.0s linear forwards;
+  animation: shroomthree 0.5s 1.0s linear forwards;
 }
 
 /*bottom center*/
@@ -160,8 +160,8 @@
   -webkit-transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
   transform: rotate(-30deg);
-  -webkit-animation: shroomfour 0.5s linear;
-  animation: shroomfour 0.5s linear;
+  -webkit-animation: shroomfour 0.5s linear forwards;
+  animation: shroomfour 0.5s linear forwards;
 }
 
 /*****************
@@ -473,11 +473,7 @@
   0% {
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -485,6 +481,7 @@
     transform: translateX(0) rotate(-20deg) scale(1);
     top: -2%;
     left: 38%;
+    background-color: tan;
     display: block;
   }
 }
@@ -494,11 +491,7 @@
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     -ms-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -507,6 +500,7 @@
     transform: translateX(0) rotate(-20deg) scale(1);
     top: -2%;
     left: 38%;
+    background-color: tan;
     display: block;
   }
 }
@@ -515,11 +509,7 @@
   0% {
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -527,6 +517,7 @@
     transform: translateX(0) rotate(-115deg) scale(1);
     top: 23%;
     left: -56%;
+    background-color: tan;
     display: block;
   }
 }
@@ -536,11 +527,7 @@
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     -ms-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -549,6 +536,7 @@
     transform: translateX(0) rotate(-115deg) scale(1);
     top: 23%;
     left: -56%;
+    background-color: tan;
     display: block;
   }
 }
@@ -557,11 +545,7 @@
   0% {
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -569,6 +553,7 @@
     transform: translateX(0) rotate(90deg) scale(1);
     top: 90%;
     left: 39%;
+    background-color: tan;
     display: block;
   }
 }
@@ -578,11 +563,7 @@
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     -ms-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -591,6 +572,7 @@
     transform: translateX(0) rotate(90deg) scale(1);
     top: 90%;
     left: 39%;
+    background-color: tan;
     display: block;
   }
 }
@@ -599,11 +581,7 @@
   0% {
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -611,6 +589,7 @@
     transform: translateX(0) rotate(-30deg) scale(1);
     top: 45%;
     left: 38%;
+    background-color: tan;
     display: block;
   }
 }
@@ -620,11 +599,7 @@
     -webkit-transform: translateX(500px) rotate(0deg) scale(1);
     -ms-transform: translateX(500px) rotate(0deg) scale(1);
     transform: translateX(500px) rotate(0deg) scale(1);
-    display: block;
-  }
-
-  50% {
-    display: block;
+    background-color: transparent;
   }
 
   100% {
@@ -633,6 +608,7 @@
     transform: translateX(0) rotate(-30deg) scale(1);
     top: 45%;
     left: 38%;
+    background-color: tan;
     display: block;
   }
 }
